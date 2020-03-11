@@ -188,6 +188,10 @@ public class GreedyQuery {
         }
     }
 
+    public List<List<String>> getPathResults() {
+        return pathResults;
+    }
+
     private Map<Double, List<String>> getMapPathResults() {
         Map<Double, List<String>> mapResults = new HashMap<>();
         for (List<String> path: pathResults) {
