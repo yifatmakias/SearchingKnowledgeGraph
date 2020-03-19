@@ -204,6 +204,8 @@ public class GreedyQuery {
                     itr.remove();
                 }
             }
+            int normalizationFactor = path.size()/2 + 1;
+            finalRank = finalRank / normalizationFactor ;
             mapResults.put(finalRank, path);
         }
         return mapResults;
