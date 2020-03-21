@@ -1,5 +1,6 @@
 package com.graph.query;
 
+import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -178,13 +179,17 @@ public class GreedyQuery {
     public void printPathResults() {
         Map<Double, List<String>> pathMapResults = getMapPathResults();
         SortedSet<Double> ranks = new TreeSet<>(pathMapResults.keySet());
+        DecimalFormat df = new DecimalFormat("#.###");
+        int resultCounter = ranks.size();
         for (Double rank : ranks) {
-            System.out.print("Path score: " + rank + ", Path: ");
+            System.out.println(String.format("***Result Path %s***", resultCounter));
+            System.out.print("Path score: " + df.format(rank) + "\nPath: ");
             List<String> path = pathMapResults.get(rank);
             for (int i = 0; i < path.size() - 1; i++) {
-                System.out.print(path.get(i) + ",");
+                System.out.print(path.get(i) + "->");
             }
             System.out.println(path.get(path.size() -1));
+            resultCounter--;
         }
     }
 

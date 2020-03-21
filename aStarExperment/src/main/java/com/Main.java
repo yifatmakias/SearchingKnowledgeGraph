@@ -31,7 +31,7 @@ public class Main {
 
         GreedyQuery greedyQuery = new GreedyQuery(graph, queryGraph, simFileEdge, simFileNode);
         // greedyQuery.run();
-        greedyQuery.recursiveRun(0, null, 3);
+        greedyQuery.recursiveRun(0, null, 2);
         greedyQuery.printPathResults();
 
 /*        ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, "Achieved_By");
