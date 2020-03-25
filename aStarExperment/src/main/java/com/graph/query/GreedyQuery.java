@@ -1,5 +1,7 @@
 package com.graph.query;
 
+import javafx.util.Pair;
+
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -56,12 +58,12 @@ public class GreedyQuery {
             AStarQueryNew aStarQueryNew = new AStarQueryNew(graph, queryThreadInfos, "Search", 100, 4);
             aStarQueryNew.run();
             AStarQueryNew.PriorityNode [][] results = aStarQueryNew.taskResults;
-            List<String> graphResults = new ArrayList<>();
+            List<Pair<Double,String>> graphResults = new ArrayList<>();
             for (int i = 0; i < results.length ; i++) {
                 for (int j = 0; j < results[i].length ; j++) {
                     if (results[i][j] != null) {
                         for (int pathNode : results[i][j].getPath().getNodes()) {
-                            graphResults.add(graph.getNodeData(pathNode).getName());
+                            graphResults.add(new Pair<>(results[i][j].getG(),graph.getNodeData(pathNode).getName()));
                         }
                     }
                 }
@@ -72,7 +74,7 @@ public class GreedyQuery {
                     if (results[i][j] != null) {
                         for (int pathNode : results[i][j].getPath().getNodes()) {
                             if (topKMap.keySet().contains(graph.getNodeData(pathNode).getName())) {
-                                double rank = (topKMap.get(graph.getNodeData(pathNode).getName()) + results[i][j].getG()) / 2;
+                                double rank = topKMap.get(graph.getNodeData(pathNode).getName());
                                 String startNodeName = graph.getNodeData(results[i][j].getPath().getStart()).getName();
                                 List<String> predicates = results[i][j].getPath().getPredicates();
                                 String endNodeName = graph.getNodeData(pathNode).getName();
@@ -171,10 +173,10 @@ public class GreedyQuery {
         return graphNode;
     }
 
-    private Map<String,Double> getTopKSimilarNodes(Map<String, Double> map_sim_node, List<String> graphResults, int k) {
+    private Map<String,Double> getTopKSimilarNodes(Map<String, Double> map_sim_node, List<Pair<Double,String>> graphResults, int k) {
         Map<String, Double> rankedGraphResults = new HashMap<>();
-        for (String graphNode: graphResults) {
-            rankedGraphResults.put(graphNode, map_sim_node.get(graphNode));
+        for (Pair<Double,String> graphNode: graphResults) {
+            rankedGraphResults.put(graphNode.getValue(), (map_sim_node.get(graphNode.getValue()) + graphNode.getKey())/2);
         }
         Map<String,Double> topk =
                 rankedGraphResults.entrySet().stream()
