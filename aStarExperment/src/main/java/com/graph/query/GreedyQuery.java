@@ -20,56 +20,6 @@ public class GreedyQuery {
         this.pathResults = new ArrayList<>();
     }
 
-    public void run() {
-        int edgeIndex = 0;
-        for (Entity queryEntity: graphQuery.getEntities()) {
-            if (edgeIndex == graphQuery.getEdgesInfo().size())
-                return;
-            String queryNodeName = queryEntity.getName();
-            for (String edgeName:
-                    graphQuery.getEdgesInfo().get(edgeIndex)) {
-                ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, edgeName);
-                Map<String, Double> map_sim_edge = read_edge_sim_file.getMap();
-                ReadSimilarityTxtFile read_node_sim_file = new ReadSimilarityTxtFile(simFileNode, queryNodeName);
-                Map<String, Double> map_sim_node = read_node_sim_file.getMap();
-
-                // Find the most similar graph node to the given query node.
-                String simGraphNode = getSimilarGrphNode(queryNodeName, map_sim_node);
-
-                // Find the graph index of the most similar graph node.
-                String graphNodeId = "";
-                Map<Entity, Integer> entitiesMap= graph.getVexIndex();
-                for (Map.Entry<Entity, Integer> entry : entitiesMap.entrySet()) {
-                    if (entry.getKey().getName().equals(simGraphNode)) {
-                        graphNodeId = entry.getKey().getId();
-                    }
-                }
-
-                QueryThreadInfo queryThreadInfo = new QueryThreadInfo(graphNodeId, edgeName, map_sim_edge, map_sim_node);
-                List<QueryThreadInfo> queryThreadInfos = new LinkedList<>();
-                queryThreadInfos.add(queryThreadInfo);
-                try {
-                    AStarQueryNew aStarQueryNew = new AStarQueryNew(graph, queryThreadInfos, "Search", 100, 4);
-                    aStarQueryNew.run();
-                    AStarQueryNew.PriorityNode [][] results = aStarQueryNew.taskResults;
-                    for (int i = 0; i < results.length ; i++) {
-                        for (int j = 0; j < results[i].length ; j++) {
-                            if (results[i][j] != null) {
-//                                System.out.println(results[i][j].getPath().getStart());
-//                                System.out.println(results[i][j].getPath().getNodes());
-//                                System.out.println(results[i][j].getPath().getPredicates());
-                            }
-                        }
-                    }
-                }
-                catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            edgeIndex++;
-        }
-    }
-
 
     public void recursiveRun(int index, String graphNode, int topK) {
         if (index == graphQuery.getEdgesInfo().size())
@@ -117,13 +67,12 @@ public class GreedyQuery {
                 }
             }
             Map<String, Double> topKMap = getTopKSimilarNodes(map_second_sim_node, graphResults, topK);
-            // System.out.println("************ Iteration #" + (index + 1) + " ************");
             for (int i = 0; i < results.length ; i++) {
                 for (int j = 0; j < results[i].length ; j++) {
                     if (results[i][j] != null) {
                         for (int pathNode : results[i][j].getPath().getNodes()) {
                             if (topKMap.keySet().contains(graph.getNodeData(pathNode).getName())) {
-                                double rank = topKMap.get(graph.getNodeData(pathNode).getName());
+                                double rank = (topKMap.get(graph.getNodeData(pathNode).getName()) + results[i][j].getG()) / 2;
                                 String startNodeName = graph.getNodeData(results[i][j].getPath().getStart()).getName();
                                 List<String> predicates = results[i][j].getPath().getPredicates();
                                 String endNodeName = graph.getNodeData(pathNode).getName();
@@ -132,17 +81,13 @@ public class GreedyQuery {
                                     if (path.get(path.size() - 1).equals(startNodeName)) {
                                         subPath = path;
                                         subPath.add(Double.toString(rank));
-                                        // double newRank = Double.parseDouble(subPath.get(0)) + rank;
-                                        // subPath.set(0, Double.toString(newRank));
                                         subPath.addAll(predicates);
                                         subPath.add(endNodeName);
                                         break;
                                     }
                                     else if (path.contains(startNodeName)) {
-                                        // double newRank = Double.parseDouble(path.get(0)) + rank;
                                         subPath = new ArrayList<>();
                                         subPath.addAll(path.subList(0, path.indexOf(startNodeName) + 1));
-                                        // subPath.set(0, Double.toString(newRank));
                                         subPath.add(Double.toString(rank));
                                         subPath.addAll(predicates);
                                         subPath.add(endNodeName);
@@ -158,10 +103,6 @@ public class GreedyQuery {
                                     subPath.add(endNodeName);
                                     pathResults.add(subPath);
                                 }
-//                                System.out.print(graph.getNodeData(results[i][j].getPath().getStart()).getName() + ",");
-//                                System.out.print(results[i][j].getPath().getPredicates() + ",");
-//                                System.out.print(graph.getNodeData(pathNode).getName() + ",");
-//                                System.out.println(topKMap.get(graph.getNodeData(pathNode).getName()));
                             }
                         }
                     }
