@@ -80,6 +80,7 @@ public class GreedyQuery {
                                 String endNodeName = graph.getNodeData(pathNode).getName();
                                 List<String> subPath = null;
                                 for (List<String> path: pathResults) {
+                                    // continue an existing path
                                     if (path.get(path.size() - 1).equals(startNodeName)) {
                                         subPath = path;
                                         subPath.add(Double.toString(rank));
@@ -87,7 +88,9 @@ public class GreedyQuery {
                                         subPath.add(endNodeName);
                                         break;
                                     }
-                                    else if (path.contains(startNodeName)) {
+                                    // make duplicate path of an existing one and continue it again.
+                                    // when the start of the path is like the start of another path.
+                                    if (path.contains(startNodeName)) {
                                         subPath = new ArrayList<>();
                                         subPath.addAll(path.subList(0, path.indexOf(startNodeName) + 1));
                                         subPath.add(Double.toString(rank));
@@ -97,10 +100,12 @@ public class GreedyQuery {
                                         break;
                                     }
                                 }
+                                // no path to continue or duplicate so create a new path
                                 if (subPath == null){
                                     subPath = new ArrayList<>();
-                                    subPath.add(Double.toString(rank));
+                                    subPath.add(Double.toString(map_first_sim_node.get(startNodeName)));
                                     subPath.add(startNodeName);
+                                    subPath.add(Double.toString(rank));
                                     subPath.addAll(predicates);
                                     subPath.add(endNodeName);
                                     pathResults.add(subPath);
@@ -176,7 +181,8 @@ public class GreedyQuery {
     private Map<String,Double> getTopKSimilarNodes(Map<String, Double> map_sim_node, List<Pair<Double,String>> graphResults, int k) {
         Map<String, Double> rankedGraphResults = new HashMap<>();
         for (Pair<Double,String> graphNode: graphResults) {
-            rankedGraphResults.put(graphNode.getValue(), (map_sim_node.get(graphNode.getValue()) + graphNode.getKey())/2);
+            double rank = (map_sim_node.get(graphNode.getValue()) + graphNode.getKey())/2;
+            rankedGraphResults.put(graphNode.getValue(), rank);
         }
         Map<String,Double> topk =
                 rankedGraphResults.entrySet().stream()
