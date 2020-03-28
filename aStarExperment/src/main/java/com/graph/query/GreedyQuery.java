@@ -13,6 +13,7 @@ public class GreedyQuery {
     private String simFileEdge;
     private String simFileNode;
     private List<List<String>> pathResults;
+    private final double SIM_THRESHOLD = 0.55;
 
     public GreedyQuery(RDFGraph graph, GraphQuery graphQuery, String simFileEdge, String simFileNode) {
         this.graph = graph;
@@ -116,7 +117,10 @@ public class GreedyQuery {
                 }
             }
             for (Map.Entry<String, Double> entry : topKMap.entrySet()) {
-                recursiveRun(index+1, entry.getKey(), topK);
+                if (entry.getValue() > SIM_THRESHOLD)
+                    recursiveRun(index+1, entry.getKey(), topK);
+                else
+                    recursiveRun(index, entry.getKey(), topK);
             }
         }
         catch (Exception e) {
