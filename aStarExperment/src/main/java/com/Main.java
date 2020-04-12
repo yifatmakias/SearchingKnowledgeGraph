@@ -6,6 +6,7 @@ import com.graph.util.Util;
 
 import java.io.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @Author: yhj
@@ -16,6 +17,7 @@ public class Main {
     final static String validationFile = ValidationFile.SEARCH_MAP.getName();
     public static void main(String[] args) throws IOException, InterruptedException{
 
+        final int K = 2;
         HelperFunctionsClass helpClass = new HelperFunctionsClass();
 
         RDFGraph graph = helpClass.createGraph("result\\RDF\\search_entity.txt",
@@ -26,11 +28,17 @@ public class Main {
         String simFileEdge = "result\\SimilarityFiles\\sim_edge.txt";
         String simFileNode = "result\\SimilarityFiles\\sim_graph_and_query.txt";
 
+        String firstQueryNode = queryGraph.getEntities().get(0).getName();
+        ReadSimilarityTxtFile read_first_node_sim_file = new ReadSimilarityTxtFile(simFileNode, firstQueryNode);
+        Map<String, Double> map_first_sim_node = read_first_node_sim_file.getMap();
+        Map<String, Double> KSimilarGraphNodes = getSimilarKGrphNodes(map_first_sim_node, K);
         // Process p = Runtime.getRuntime().exec("C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\venv\\Scripts\\python.exe C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\node_similarity.py result\\RDF\\search_entity.txt result\\SimilarityFiles\\sim_graph_and_query.txt result\\GraphQueryFiles\\query_entity.txt");
         // p.waitFor();
 
         GreedyQuery greedyQuery = new GreedyQuery(graph, queryGraph, simFileEdge, simFileNode);
-        greedyQuery.recursiveRun(0, null, 2);
+        for (Map.Entry<String, Double> entry : KSimilarGraphNodes.entrySet()) {
+            greedyQuery.recursiveRun(0, entry.getKey(), K);
+        }
         greedyQuery.printPathResults();
 
 /*        ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, "Achieved_By");
@@ -55,6 +63,14 @@ public class Main {
         aStartTest(graph, queryThreadInfos);*/
 
 
+    }
+
+    private static Map<String, Double> getSimilarKGrphNodes(Map<String, Double> map_sim_node, int k) {
+        return map_sim_node.entrySet().stream()
+                        .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                        .limit(k)
+                        .collect(Collectors.toMap(
+                                Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     public static void aStartTest(RDFGraph graph,List<QueryThreadInfo> queryThreadInfos) throws IOException{

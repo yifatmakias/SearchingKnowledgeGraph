@@ -27,9 +27,16 @@ public class GreedyQuery {
     public void recursiveRun(int index, String graphNode, int topK) {
         if (index == graphQuery.getEdgesInfo().size())
             return;
-        String edgeName = graphQuery.getEdgesInfo().get(index).get(0);
         String firstQueryNode = graphQuery.getEntities().get(index).getName();
+        int firstQueryNodeId = graphQuery.getGraphQuery().getVex(graphQuery.getEntities().get(index));
         String secondQueryNode = graphQuery.getEntities().get(index+1).getName();
+        int secondQueryNodeId = graphQuery.getGraphQuery().getVex(graphQuery.getEntities().get(index+1));
+        String edgeName = "";
+        List<String> edgeList = graphQuery.getGraphQuery().getEdgeInfo(firstQueryNodeId, secondQueryNodeId);
+        if (edgeList == null)
+            return;
+        else
+            edgeName = edgeList.get(0);
 
         ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, edgeName);
         Map<String, Double> map_sim_edge = read_edge_sim_file.getMap();
@@ -37,11 +44,6 @@ public class GreedyQuery {
         Map<String, Double> map_first_sim_node = read_first_node_sim_file.getMap();
         ReadSimilarityTxtFile read_second_node_sim_file = new ReadSimilarityTxtFile(simFileNode, secondQueryNode);
         Map<String, Double> map_second_sim_node = read_second_node_sim_file.getMap();
-
-        // Find the most similar graph node to the given query node.
-        if (graphNode == null){
-            graphNode = getSimilarGrphNode(firstQueryNode, map_first_sim_node);
-        }
 
         // Find the graph index of the most similar graph node.
         String graphNodeId = "";
@@ -175,11 +177,6 @@ public class GreedyQuery {
         } catch (NumberFormatException e) {
             return false;
         }
-    }
-
-    private String getSimilarGrphNode(String queryNode, Map<String, Double> map_sim_node) {
-        String graphNode = Collections.max(map_sim_node.entrySet(), Map.Entry.comparingByValue()).getKey();
-        return graphNode;
     }
 
     private Map<String,Double> getTopKSimilarNodes(Map<String, Double> map_sim_node, List<Pair<Double,String>> graphResults, int k) {

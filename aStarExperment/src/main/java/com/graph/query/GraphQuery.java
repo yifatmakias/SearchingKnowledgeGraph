@@ -26,7 +26,7 @@ public class GraphQuery {
         helperClass = new HelperFunctionsClass();
         helperClass.readEntity(entityFile, entities);
         helperClass.readEdges(edgeFile, edges, edgesInfo);
-
+        this.graphQuery = helperClass.createGraph(entityFile, edgeFile);
     }
 
     public String getEntityFile() {
