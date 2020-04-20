@@ -2,7 +2,7 @@ package com;
 
 import com.configuration.ValidationFile;
 import com.graph.query.*;
-import com.graph.util.Util;
+import com.graph.util.Util.*;
 
 import java.io.*;
 import java.util.*;
@@ -24,6 +24,8 @@ public class Main {
                 "result\\RDF\\search_edge.txt");
         GraphQuery queryGraph = new GraphQuery("result\\GraphQueryFiles\\query_entity.txt",
                 "result/GraphQueryFiles/query_edge.txt");
+
+        queryGraph.getGraphQuery().printPathsForAllLeaves();
 
         String simFileEdge = "result\\SimilarityFiles\\sim_edge.txt";
         String simFileNode = "result\\SimilarityFiles\\sim_graph_and_query.txt";

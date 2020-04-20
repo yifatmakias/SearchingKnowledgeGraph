@@ -1,5 +1,7 @@
 package com.graph.query;
 
+import javafx.scene.layout.VBox;
+
 import java.io.IOException;
 import java.util.*;
 import java.util.function.Consumer;
@@ -15,7 +17,7 @@ public class Graph<T, K> {
     int vexnum, arcnum;
     boolean isDirected;
 
-    class VexNode<T> {
+    public class VexNode<T> {
         T data;
         ArcNode firstarc;
         VexNode(T data, ArcNode firstarc){
@@ -257,6 +259,71 @@ public class Graph<T, K> {
             }
             System.out.println();
         }
+    }
+
+    public List<VexNode> getLeaves(){
+        ArrayList<VexNode> leavesData = new ArrayList<>();
+        for(VexNode vexNode: vexNodes){
+            ArcNode p = vexNode.firstarc;
+            if (p == null) {
+                leavesData.add(vexNode);
+            }
+        }
+        return leavesData;
+    }
+
+    public void printAllPaths(VexNode source, VexNode dest, ArrayList<ArrayList<String>> allPaths) {
+        boolean[] isVisited = new boolean[vexNodes.length];
+        ArrayList<String> pathList = new ArrayList<>();
+
+        pathList.add(source.data.toString());
+        printAllPathsUtil(source, dest, isVisited, pathList, allPaths);
+    }
+
+    private void printAllPathsUtil(VexNode u, VexNode d, boolean[] isVisited, ArrayList<String> loaclPathList, ArrayList<ArrayList<String>> allPaths) {
+        int index = Arrays.asList(vexNodes).indexOf(u);
+        isVisited[index] = true;
+
+        if (u.equals(d)) {
+            ArrayList<String> finalPathList = new ArrayList<>(loaclPathList);
+            allPaths.add(finalPathList);
+            // System.out.println(loaclPathList);
+            isVisited[index] = false;
+            return;
+        }
+
+        ArcNode p = u.firstarc;
+        while (p != null) {
+            int i = p.adjvex;
+            if (!isVisited[i]) {
+                loaclPathList.add(p.edgeInfo.toString() + ',' + vexNodes[i].data.toString());
+                printAllPathsUtil(vexNodes[i], d, isVisited, loaclPathList, allPaths);
+
+                loaclPathList.remove(p.edgeInfo.toString() + ',' + vexNodes[i].data.toString());
+            }
+            p = p.next;
+        }
+        isVisited[index] = false;
+    }
+
+    public void printPathsForAllLeaves() {
+        ArrayList<ArrayList<String>> allPaths = getPathsForAllLeaves();
+        for (List<String> path: allPaths) {
+            for (String data: path) {
+                System.out.print(data + ',');
+            }
+            System.out.println();
+        }
+    }
+
+    public ArrayList<ArrayList<String>> getPathsForAllLeaves() {
+        ArrayList<ArrayList<String>> allPaths = new ArrayList<>();
+        List<VexNode> leaves = getLeaves();
+        VexNode source = vexNodes[0];
+        for (VexNode leave: leaves) {
+            printAllPaths(source, leave, allPaths);
+        }
+        return allPaths;
     }
 
     public Iterator<ArcNode> iterator(int start){
