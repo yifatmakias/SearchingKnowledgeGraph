@@ -24,19 +24,25 @@ public class GreedyQuery {
     }
 
 
-    public void recursiveRun(int index, String graphNode, int topK) {
-        if (index == graphQuery.getEdgesInfo().size())
+    public void recursiveRun(int index, String graphNode, int topK, ArrayList<String> queryPath) {
+        if (index >= queryPath.size() - 2)
             return;
-        String firstQueryNode = graphQuery.getEntities().get(index).getName();
-        int firstQueryNodeId = graphQuery.getGraphQuery().getVex(graphQuery.getEntities().get(index));
-        String secondQueryNode = graphQuery.getEntities().get(index+1).getName();
-        int secondQueryNodeId = graphQuery.getGraphQuery().getVex(graphQuery.getEntities().get(index+1));
-        String edgeName = "";
-        List<String> edgeList = graphQuery.getGraphQuery().getEdgeInfo(firstQueryNodeId, secondQueryNodeId);
-        if (edgeList == null)
-            return;
-        else
-            edgeName = edgeList.get(0);
+        String firstQueryNode = queryPath.get(index).split(":")[1];
+        String edgeName = queryPath.get(index+1);
+        String secondQueryNode = queryPath.get(index+2).split(":")[1];
+
+//        if (index == graphQuery.getEdgesInfo().size())
+//            return;
+//        String firstQueryNode = graphQuery.getEntities().get(index).getName();
+//        int firstQueryNodeId = graphQuery.getGraphQuery().getVex(graphQuery.getEntities().get(index));
+//        String secondQueryNode = graphQuery.getEntities().get(index+1).getName();
+//        int secondQueryNodeId = graphQuery.getGraphQuery().getVex(graphQuery.getEntities().get(index+1));
+//        String edgeName = "";
+//        List<String> edgeList = graphQuery.getGraphQuery().getEdgeInfo(firstQueryNodeId, secondQueryNodeId);
+//        if (edgeList == null)
+//            return;
+//        else
+//            edgeName = edgeList.get(0);
 
         ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, edgeName);
         Map<String, Double> map_sim_edge = read_edge_sim_file.getMap();
@@ -120,9 +126,9 @@ public class GreedyQuery {
             }
             for (Map.Entry<String, Double> entry : topKMap.entrySet()) {
                 if (entry.getValue() > SIM_THRESHOLD)
-                    recursiveRun(index+1, entry.getKey(), topK);
+                    recursiveRun(index+2, entry.getKey(), topK, queryPath);
                 else
-                    recursiveRun(index, entry.getKey(), topK);
+                    recursiveRun(index, entry.getKey(), topK, queryPath);
             }
         }
         catch (Exception e) {

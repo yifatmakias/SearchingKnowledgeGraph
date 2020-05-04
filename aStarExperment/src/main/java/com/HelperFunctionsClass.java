@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class HelperFunctionsClass {
 
@@ -77,6 +78,14 @@ public class HelperFunctionsClass {
             entities.add(new Entity(infos[0], infos[1], infos[2]));
         }
         reader.close();
+    }
+
+    public Map<String, Double> getSimilarKGraphNodes(Map<String, Double> map_sim_node, int k) {
+        return map_sim_node.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .limit(k)
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     private String getSimilarGrphNode(String queryNode, String simFileNode) {

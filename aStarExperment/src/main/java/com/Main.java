@@ -26,6 +26,7 @@ public class Main {
                 "result/GraphQueryFiles/query_edge.txt");
 
         queryGraph.getGraphQuery().printPathsForAllLeaves();
+        ArrayList<ArrayList<String>> queryPaths = queryGraph.getGraphQuery().getPathsForAllLeaves();
 
         String simFileEdge = "result\\SimilarityFiles\\sim_edge.txt";
         String simFileNode = "result\\SimilarityFiles\\sim_graph_and_query.txt";
@@ -33,17 +34,19 @@ public class Main {
         String firstQueryNode = queryGraph.getEntities().get(0).getName();
         ReadSimilarityTxtFile read_first_node_sim_file = new ReadSimilarityTxtFile(simFileNode, firstQueryNode);
         Map<String, Double> map_first_sim_node = read_first_node_sim_file.getMap();
-        Map<String, Double> KSimilarGraphNodes = getSimilarKGrphNodes(map_first_sim_node, K);
-        // Process p = Runtime.getRuntime().exec("C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\venv\\Scripts\\python.exe C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\node_similarity.py result\\RDF\\search_entity.txt result\\SimilarityFiles\\sim_graph_and_query.txt result\\GraphQueryFiles\\query_entity.txt");
-        // p.waitFor();
+        Map<String, Double> KSimilarGraphNodes = helpClass.getSimilarKGraphNodes(map_first_sim_node, K);
+        Process p = Runtime.getRuntime().exec("C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\venv\\Scripts\\python.exe C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\node_similarity.py result\\RDF\\search_entity.txt result\\SimilarityFiles\\sim_graph_and_query.txt result\\GraphQueryFiles\\query_entity.txt");
+        p.waitFor();
 
         GreedyQuery greedyQuery = new GreedyQuery(graph, queryGraph, simFileEdge, simFileNode);
         for (Map.Entry<String, Double> entry : KSimilarGraphNodes.entrySet()) {
-            greedyQuery.recursiveRun(0, entry.getKey(), K);
+            for (ArrayList<String> queryPath: queryPaths) {
+                greedyQuery.recursiveRun(0, entry.getKey(), K, queryPath);
+            }
         }
         greedyQuery.printPathResults();
 
-/*        ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, "Achieved_By");
+/*      ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, "Achieved_By");
         Map<String, Double> map_sim_edge = read_edge_sim_file.getMap();
         ReadSimilarityTxtFile read_node_sim_file = new ReadSimilarityTxtFile(simFileNode, "Find");
         Map<String, Double> map_sim_node = read_node_sim_file.getMap();
@@ -65,14 +68,6 @@ public class Main {
         aStartTest(graph, queryThreadInfos);*/
 
 
-    }
-
-    private static Map<String, Double> getSimilarKGrphNodes(Map<String, Double> map_sim_node, int k) {
-        return map_sim_node.entrySet().stream()
-                        .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                        .limit(k)
-                        .collect(Collectors.toMap(
-                                Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     public static void aStartTest(RDFGraph graph,List<QueryThreadInfo> queryThreadInfos) throws IOException{

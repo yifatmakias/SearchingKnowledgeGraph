@@ -272,15 +272,15 @@ public class Graph<T, K> {
         return leavesData;
     }
 
-    public void printAllPaths(VexNode source, VexNode dest, ArrayList<ArrayList<String>> allPaths) {
+    public void getAllPaths(VexNode source, VexNode dest, ArrayList<ArrayList<String>> allPaths) {
         boolean[] isVisited = new boolean[vexNodes.length];
         ArrayList<String> pathList = new ArrayList<>();
 
         pathList.add(source.data.toString());
-        printAllPathsUtil(source, dest, isVisited, pathList, allPaths);
+        getAllPathsUtil(source, dest, isVisited, pathList, allPaths);
     }
 
-    private void printAllPathsUtil(VexNode u, VexNode d, boolean[] isVisited, ArrayList<String> loaclPathList, ArrayList<ArrayList<String>> allPaths) {
+    private void getAllPathsUtil(VexNode u, VexNode d, boolean[] isVisited, ArrayList<String> loaclPathList, ArrayList<ArrayList<String>> allPaths) {
         int index = Arrays.asList(vexNodes).indexOf(u);
         isVisited[index] = true;
 
@@ -296,10 +296,9 @@ public class Graph<T, K> {
         while (p != null) {
             int i = p.adjvex;
             if (!isVisited[i]) {
-                loaclPathList.add(p.edgeInfo.toString() + ',' + vexNodes[i].data.toString());
-                printAllPathsUtil(vexNodes[i], d, isVisited, loaclPathList, allPaths);
-
-                loaclPathList.remove(p.edgeInfo.toString() + ',' + vexNodes[i].data.toString());
+                loaclPathList.add(((ArrayList<String>)p.edgeInfo).get(0) + "," + vexNodes[i].data.toString());
+                getAllPathsUtil(vexNodes[i], d, isVisited, loaclPathList, allPaths);
+                loaclPathList.remove(((ArrayList<String>)p.edgeInfo).get(0) + "," + vexNodes[i].data.toString());
             }
             p = p.next;
         }
@@ -321,7 +320,20 @@ public class Graph<T, K> {
         List<VexNode> leaves = getLeaves();
         VexNode source = vexNodes[0];
         for (VexNode leave: leaves) {
-            printAllPaths(source, leave, allPaths);
+            getAllPaths(source, leave, allPaths);
+        }
+        for (ArrayList<String> path: allPaths) {
+            ListIterator<String> iter = path.listIterator();
+            while(iter.hasNext()) {
+                String arcAndNodeStr =  iter.next();
+                if (arcAndNodeStr.contains(","))
+                {
+                    String [] arcAndNode = arcAndNodeStr.split(",");
+                    iter.remove();
+                    iter.add(arcAndNode[0]);
+                    iter.add(arcAndNode[1]);
+                }
+            }
         }
         return allPaths;
     }
