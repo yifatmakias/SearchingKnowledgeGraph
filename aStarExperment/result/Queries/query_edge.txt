@@ -1,3 +1,0 @@
-1 2 Find Achieved_By Breadth_First_Search
-2 3 Breadth_First_Search Achieved_By General_Graph
-2 4 Breadth_First_Search Achieved_By Binary_Tree

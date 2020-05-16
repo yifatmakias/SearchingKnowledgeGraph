@@ -1,2 +1,0 @@
-1 Breadth_First_Search Search
-2 Java Search

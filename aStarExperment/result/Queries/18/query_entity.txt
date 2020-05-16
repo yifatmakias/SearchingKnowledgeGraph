@@ -1,2 +1,0 @@
-1 Knowledge_discover Data_mining
-2 Classification Data_mining

@@ -1,4 +1,0 @@
-1 Sentiment_Classification Sentiment_Analysis
-2 Political_News_Analysis Sentiment_Analysis
-3 Machine_Learning Sentiment_Analysis
-4 Entropy Sentiment_Analysis

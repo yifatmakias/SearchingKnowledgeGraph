@@ -1,2 +1,0 @@
-1 2 Specify_BP_Family Achieved_By Restriction_Model
-2 3 Restriction_Model Consists_Of Validation_Algorithm

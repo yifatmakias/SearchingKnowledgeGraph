@@ -1,5 +1,0 @@
-1 Find Search
-2 Breadth_First_Search Search
-3 Tree Search
-4 Python Search
-5 Recursive Search

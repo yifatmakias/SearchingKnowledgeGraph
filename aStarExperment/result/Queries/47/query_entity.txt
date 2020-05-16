@@ -1,2 +1,0 @@
-1 Multiple_Variant_Model BP_Families
-2 ADOM BP_Families

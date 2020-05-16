@@ -1,3 +1,0 @@
-1 2 Analysis Achieved_By Classification
-2 3 Classification Achieved_By Level
-3 4 Level Contribution_plus Difficulty

@@ -1,2 +1,0 @@
-1 Classification Data_mining
-2 Define_feature_space Data_mining

@@ -1,2 +1,0 @@
-1 Supervised_Machine_Learning Sentiment_Analysis
-2 Maximum_Entropy Sentiment_Analysis

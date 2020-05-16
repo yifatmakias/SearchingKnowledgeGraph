@@ -1,4 +1,0 @@
-1 Design_Pattern_Language DSPL
-2 Specification_Based_DPSL DSPL
-3 DPSL_with_other_language_foundation DPSL
-4 RSL DPSL

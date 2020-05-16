@@ -1,2 +1,0 @@
-1 2 DPSL Achieved_By Intent-based_DSPL
-2 3 Intent-based_DSPL Consists_Of DPSL_for_defining_DP

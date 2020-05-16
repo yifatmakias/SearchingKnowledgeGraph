@@ -1,4 +1,0 @@
-1 Astar Search
-2 Graph Search
-3 C Search
-4 Non-Recursive Search

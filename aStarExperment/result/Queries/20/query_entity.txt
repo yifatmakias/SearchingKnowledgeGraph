@@ -1,2 +1,0 @@
-1 Modeling Data_mining
-2 Neural_Network Data_mining

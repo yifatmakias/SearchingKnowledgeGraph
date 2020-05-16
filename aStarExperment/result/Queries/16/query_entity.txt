@@ -1,3 +1,0 @@
-1 Predictive Data_mining
-2 Classification Data_mining
-3 Support_Vector Data_mining

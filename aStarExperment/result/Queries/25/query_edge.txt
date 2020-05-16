@@ -1,3 +1,0 @@
-1 2 Sentiment_Classification Achieved_By Political_News_Analysis
-2 3 Political_News_Analysis Achieved_By Machine_Learning
-3 4 Machine_Learning Achieved_By Entropy

@@ -1,4 +1,0 @@
-1 2 Discover_knowledge Achieved_By Predictive_modeling
-2 3 Predictive_modeling Achieved_By Classification
-3 4 Classification Achieved_By K-Nearest_Neighbors
-4 5 K-Nearest_Neighbors Consists_Of Define_feature_space

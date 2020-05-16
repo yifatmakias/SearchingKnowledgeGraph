@@ -1,3 +1,0 @@
-1 Design_Pattern DSPL
-2 Specify_Patterns DSPL
-3 DPSL DPSL

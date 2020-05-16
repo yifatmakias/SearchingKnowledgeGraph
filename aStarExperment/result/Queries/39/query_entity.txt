@@ -1,2 +1,0 @@
-1 Specify_Design_Patterns DSPL
-2 DPSL_with_modeling_language_foundation DSPL

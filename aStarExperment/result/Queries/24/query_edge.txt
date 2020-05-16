@@ -1,2 +1,0 @@
-1 2 Sentiment_Analysis Achieved_By Classification
-2 3 Classification Achieved_By Political_News_Analysis
