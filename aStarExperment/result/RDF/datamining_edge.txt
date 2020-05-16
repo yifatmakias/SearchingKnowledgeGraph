@@ -20,4 +20,3 @@
 9 17 Use_Neural_Network Contribution_Minus_Minus Tolerance_to_missing_values
 10 16 Use_k-nearest_neighbour Contribution_Minus Accuracy
 10 17 Use_k-nearest_neighbour Contribution_Minus_Minus Tolerance_to_missing_values
-

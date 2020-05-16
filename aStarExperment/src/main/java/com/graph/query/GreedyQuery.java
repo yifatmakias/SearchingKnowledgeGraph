@@ -13,13 +13,15 @@ public class GreedyQuery {
     private String simFileEdge;
     private String simFileNode;
     private List<List<String>> pathResults;
+    private String graphDomain;
     private final double SIM_THRESHOLD = 0.55;
 
-    public GreedyQuery(RDFGraph graph, GraphQuery graphQuery, String simFileEdge, String simFileNode) {
+    public GreedyQuery(RDFGraph graph, GraphQuery graphQuery, String simFileEdge, String simFileNode, String graphDomain) {
         this.graph = graph;
         this.graphQuery = graphQuery;
         this.simFileEdge = simFileEdge;
         this.simFileNode = simFileNode;
+        this.graphDomain = graphDomain;
         this.pathResults = new ArrayList<>();
     }
 
@@ -64,7 +66,7 @@ public class GreedyQuery {
         List<QueryThreadInfo> queryThreadInfos = new LinkedList<>();
         queryThreadInfos.add(queryThreadInfo);
         try {
-            AStarQueryNew aStarQueryNew = new AStarQueryNew(graph, queryThreadInfos, "Search", 100, 4);
+            AStarQueryNew aStarQueryNew = new AStarQueryNew(graph, queryThreadInfos, this.graphDomain, 100, 4);
             aStarQueryNew.run();
             AStarQueryNew.PriorityNode [][] results = aStarQueryNew.taskResults;
             List<Pair<Double,String>> graphResults = new ArrayList<>();

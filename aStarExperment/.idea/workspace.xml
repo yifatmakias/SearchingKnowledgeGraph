@@ -2,22 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42ce0e8d-3c64-4bf9-84ec-9dde082db6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/query_edge.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/query_entity.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/search_edge.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/search_entity.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sim_edge.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sim_graph_and_query.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/1/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/1/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/10/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/10/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/11/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/11/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/12/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/12/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/13/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/13/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/14/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/14/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/15/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/15/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/16/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/16/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/17/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/17/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/18/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/18/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/19/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/19/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/2/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/2/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/20/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/20/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/21/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/21/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/22/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/22/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/23/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/23/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/24/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/24/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/25/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/25/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/26/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/26/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/27/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/27/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/28/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/28/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/29/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/29/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/3/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/3/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/30/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/30/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/31/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/31/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/32/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/32/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/33/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/33/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/34/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/34/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/35/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/35/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/36/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/36/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/37/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/37/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/38/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/38/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/39/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/39/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/4/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/4/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/40/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/40/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/41/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/41/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/42/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/42/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/43/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/43/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/44/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/44/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/45/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/45/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/46/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/46/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/47/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/47/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/48/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/48/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/5/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/5/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/6/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/6/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/7/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/7/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/8/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/8/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/9/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/9/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/query_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/Queries/query_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/RDF/BP_Families_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/RDF/BP_Families_entity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/RDF/DSPL_edge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/RDF/DSPL_entity.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/RDF/datamining_edge.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/RDF/datamining_edge.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/RDF/edge.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/RDF/entity.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/RDF/sentimentAnalysis_edge.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/RDF/sentimentAnalysis_edge.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/RDF/sentimentAnalysis_entity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/RDF/sentimentAnalysis_entity.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/SimilarityFiles/sim_graph_and_query.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/SimilarityFiles/sim_graph_and_query.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HelperFunctionsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HelperFunctionsClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/graph/query/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graph/query/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HelperFunctionsClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HelperFunctionsClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/graph/query/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/graph/query/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/graph/query/GreedyQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/graph/query/GreedyQuery.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/GreedyQueryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GreedyQueryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/GreedyQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/GreedyQueryTest.java" afterDir="false" />
@@ -88,36 +184,37 @@
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="87" />
-          <entry key="txt" value="68" />
+          <entry key="java" value="94" />
+          <entry key="txt" value="321" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="87" />
-          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="JAVA" value="94" />
+          <entry key="PLAIN_TEXT" value="321" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="20" />
-          <entry key="java" value="11349" />
-          <entry key="txt" value="1377" />
+          <entry key="java" value="12072" />
+          <entry key="txt" value="2770" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11349" />
-          <entry key="PLAIN_TEXT" value="1397" />
+          <entry key="JAVA" value="12072" />
+          <entry key="PLAIN_TEXT" value="2790" />
         </counts>
       </usages-collector>
     </session>
@@ -130,8 +227,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="186">
+              <caret line="37" column="91" selection-start-line="37" selection-start-column="91" selection-end-line="37" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,67 +237,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/HelperFunctionsClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result/GraphQueryFiles/query_entity.txt">
+        <entry file="file://$PROJECT_DIR$/result/Queries/query_edge.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQuery.java">
+        <entry file="file://$PROJECT_DIR$/result/Queries/query_entity.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result/GraphQueryFiles/query_edge.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/GreedyQueryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -216,9 +265,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>0.37494700000000003</find>
-      <find>similarMap</find>
-      <find>AStarQuery</find>
       <find>start node</find>
       <find>proces</find>
       <find>getNodeIdex</find>
@@ -246,6 +292,9 @@
       <find>show</find>
       <find>VexNode</find>
       <find>getL</find>
+      <find>query_entity</find>
+      <find>search_entity</find>
+      <find>SPINE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -254,49 +303,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/util/QuickSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/read/FindPath.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/read/BaseOperate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/read/GraphTableOperate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/test.java" />
-        <option value="$PROJECT_DIR$/result/Automobile/RDF/AutoJacobian/entity2.txt" />
-        <option value="$PROJECT_DIR$/result/Automobile/RDF/AutoJacobian/edge2.txt" />
-        <option value="$PROJECT_DIR$/result/Automobile/RDF/AutoJacobian/datamining_entity.txt" />
-        <option value="$PROJECT_DIR$/result/Automobile/RDF/AutoJacobian/datamining_edge.txt" />
-        <option value="$PROJECT_DIR$/result/Automobile/RDF/AutoJacobian/search_entity.txt" />
-        <option value="$PROJECT_DIR$/result/TransEResult/automobile/iteration500/sim_result_search.txt" />
-        <option value="$PROJECT_DIR$/result/validation/neo4j/automobile/search.txt" />
-        <option value="$PROJECT_DIR$/result/Automobile/RDF/AutoJacobian/search_edge.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/AStarPathModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/AStarResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/QueryThreadInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/RDFGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/read/EdgeSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/read/SqlUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/util/Util.java" />
-        <option value="$PROJECT_DIR$/result/TransEResult/automobile/iteration500/sim_result_search_edge.txt" />
-        <option value="$PROJECT_DIR$/result/ValidationFiles/search.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/configuration/ValidationFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/read/FindPath.java" />
-        <option value="$PROJECT_DIR$/result/GraphQueryFiles/search_entity.txt" />
-        <option value="$PROJECT_DIR$/result/GraphQueryFiles/search_edge.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQueryAlgo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/ReadSimilarityTxtFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/AbstractQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/NewAStarTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/HelperFunctionImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/AStarQueryNew.java" />
-        <option value="$PROJECT_DIR$/result/RDF/search_entity.txt" />
-        <option value="$PROJECT_DIR$/result/RDF/search_edge.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/GraphQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/Graph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/HelperFunctionsClass.java" />
+        <option value="$PROJECT_DIR$/result/Queries/39/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/40/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/40/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/6/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/6/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/SimilarityFiles/sim_graph_and_query.txt" />
+        <option value="$PROJECT_DIR$/result/RDF/datamining_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/11/query_edge.txt" />
         <option value="$PROJECT_DIR$/tests/GreedyQueryTest.java" />
-        <option value="$PROJECT_DIR$/result/GraphQueryFiles/query_entity.txt" />
-        <option value="$PROJECT_DIR$/result/GraphQueryFiles/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/11/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/13/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/13/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/16/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/16/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/17/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/17/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/18/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/18/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/25/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/26/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/28/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/28/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/RDF/sentimentAnalysis_entity.txt" />
+        <option value="$PROJECT_DIR$/result/RDF/sentimentAnalysis_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/24/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/25/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/RDF/DSPL_entity.txt" />
+        <option value="$PROJECT_DIR$/result/RDF/DSPL_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/31/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/31/query_entity.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQuery.java" />
+        <option value="$PROJECT_DIR$/result/Queries/41/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/41/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/42/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/42/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/43/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/43/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/44/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/44/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/45/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/45/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/46/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/46/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/47/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/47/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/48/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/48/query_edge.txt" />
+        <option value="$PROJECT_DIR$/result/RDF/BP_Families_edge.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/query_entity.txt" />
+        <option value="$PROJECT_DIR$/result/Queries/query_edge.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/Main.java" />
       </list>
     </option>
@@ -319,10 +375,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
-    <option name="width" value="1938" />
-    <option name="height" value="1029" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
+    <option name="height" value="1104" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -330,7 +387,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,12 +398,6 @@
               <item name="aStarExperment" type="b2602c69:ProjectViewProjectNode" />
               <item name="aStarExperment" type="462c0819:PsiDirectoryNode" />
               <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aStarExperment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aStarExperment" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-              <item name="GraphQueryFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aStarExperment" type="b2602c69:ProjectViewProjectNode" />
@@ -441,12 +491,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588587092252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589610864517" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/system" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -456,18 +507,15 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\ValidationFiles" />
-      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\TransEResult" />
-      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\RDF" />
-      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\tests" />
-      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\GraphQueryFiles" />
-      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\TransEResult\automobile\iteration500" />
-      <recent name="C:\Users\yifat\aStarDemo-master\aStarExperment\result\TransEResult\automobile\iteration500" />
-      <recent name="D:\JavaProject\aStarExperment\result\TransE子图\automobile\iteration500" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\Queries" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\Queries\48" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\Queries\47" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\Queries\46" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\Queries\45" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.graph.read" />
@@ -476,8 +524,11 @@
       <recent name="com.graph.query" />
       <recent name="com.configuration" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\ValidationFiles" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\TransEResult" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result\RDF" />
+      <recent name="C:\Users\yifat\SearchingKnowledgeGraph\aStarExperment\result" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -680,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587388731725</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implemented third step of multi path and fixing tests according to recent changes.">
+      <created>1588587233844</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1588587233845</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -719,10 +777,10 @@
     <option name="totallyTimeSpent" value="5381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1292" height="686" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7803571" visible="true" weight="0.2792208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7803571" visible="true" weight="0.2728745" />
       <window_info id="Structure" order="1" sideWeight="0.21964286" side_tool="true" weight="0.2757502" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -732,15 +790,15 @@
       <window_info id="DB Browser" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49878347" visible="true" weight="0.20072332" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.70053476" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878347" weight="0.37188613" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43238434" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959448" weight="0.4973262" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004055" side_tool="true" weight="0.38035715" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.1764706" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.17570499" />
       <window_info anchor="bottom" id="JProfiler" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -818,338 +876,296 @@
     <MESSAGE value="Added transitivity to returning results" />
     <MESSAGE value="Added treatment to return k vertices in the graph that are most similar to the first vertex in the query" />
     <MESSAGE value="Added 2 new functionality to the graph class:&#10;1.function that finds all the leaves&#10;2.function that finds all paths between given source and dest.&#10;3.function that finds all paths between query source and all its leaves." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 2 new functionality to the graph class:&#10;1.function that finds all the leaves&#10;2.function that finds all paths between given source and dest.&#10;3.function that finds all paths between query source and all its leaves." />
+    <MESSAGE value="Implemented third step of multi path and fixing tests according to recent changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented third step of multi path and fixing tests according to recent changes." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/result/RDF/sentimentAnalysis_edge.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/RDF/datamining_edge.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="180" column="12" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="642" column="25" selection-start-line="642" selection-start-column="25" selection-end-line="642" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/ValidationFiles/germany.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/AStarResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/read/BaseOperate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/read/EdgeSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/read/GraphTableOperate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/util/TwoTuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1223">
-          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/concurrent/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/TransEResult/automobile/iteration500/part_0.1_0.4_0.8_200.txt" />
-    <entry file="file://$PROJECT_DIR$/result/SimilarityFiles/sim_result_search.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/AStarPathResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/configuration/ValidationFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/read/SqlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/AStarPathModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/ValidationFiles/search.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/util/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/QueryThreadInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/ReadSimilarity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQueryAlgo.java" />
-    <entry file="file://$PROJECT_DIR$/result/RDF/edge.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/AbstractQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/read/FindPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HelperFunctionImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/AStarQueryNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="377" column="19" lean-forward="true" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result/SimilarityFiles/sim_edge.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="39" column="15" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="15" />
+        <state relative-caret-position="-289">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/ReadSimilarityTxtFile.java">
+    <entry file="file://$PROJECT_DIR$/result/RDF/DSPL_entity.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="425">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/RDF/entity.txt">
+    <entry file="file://$PROJECT_DIR$/result/RDF/DSPL_edge.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        <state relative-caret-position="221">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/SimilarityFiles/sim_graph_and_query.txt">
+    <entry file="file://$PROJECT_DIR$/result/Queries/31/query_entity.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="17">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/RDF/search_edge.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/RDFGraph.java">
+    <entry file="file://$PROJECT_DIR$/result/Queries/31/query_edge.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/RDF/search_entity.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/GraphQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/search_edge.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/query_edge.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sim_edge.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sim_graph_and_query.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HelperFunctionsClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/GreedyQueryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/GraphQueryFiles/query_entity.txt">
+    <entry file="file://$PROJECT_DIR$/result/Queries/32/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/32/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/33/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/33/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/34/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/RDF/sentimentAnalysis_edge.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/GraphQueryFiles/query_edge.txt">
+    <entry file="file://$PROJECT_DIR$/result/RDF/sentimentAnalysis_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/34/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/35/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/36/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/36/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/37/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/37/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/38/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/38/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/39/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/39/query_entity.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/40/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/41/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/41/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/42/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/42/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/43/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/43/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/44/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/44/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/45/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/45/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/46/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/46/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/47/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/47/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/48/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/48/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/RDF/datamining_edge.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/RDF/datamining_entity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HelperFunctionsClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/RDF/BP_Families_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/RDF/BP_Families_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/GreedyQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/SimilarityFiles/sim_graph_and_query.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="27" selection-start-line="27" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/graph/query/RDFGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/query_edge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/Queries/query_entity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="186">
+          <caret line="37" column="91" selection-start-line="37" selection-start-column="91" selection-end-line="37" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

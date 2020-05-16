@@ -3,34 +3,15 @@
 1 4 Sentiment_Analysis Consists_Of Aggregate_Text
 1 5 Sentiment_Analysis Consists_Of Scoring
 1 6 Sentiment_Analysis Consists_Of Evaluation
-1 10 Sentiment_Analysis Consists_Of Sentimet_Classification
-7 10 Sentence_Level  Achieved_By Sentimet_Classification
-7 8 Sentence_Level Contributon_Minus Difficulty
-10 8 Sentimet_Classification Association Difficulty
-10 9 Sentimet_Classification Achieved_By Aspect_Level
-9 8 Aspect_Level Contributon_Plus Difficulty
-10 11 Sentimet_Classification Achieved_By Document_Level
-11 8 Document_Level Contributon_Plus_Plus Difficulty
-10 14 Sentimet_Classification Achieved_By Entity_Level
-14 8 Entity_Level Contributon_Plus Difficulty
-4 13 Aggregate_Text Extended_By Analyse_Postivie_or_Negative_Text
-10 12 Sentimet_Classification Achieved_By Sentiment_Analysis_of_Political_News
-10 13 Sentimet_Classification Extended_By Analyse_Postivie_or_Negative_Text  
-10 17 Sentimet_Classification Achieved_By Supervised_Machine_Learning
-10 18 Sentimet_Classification Achieved_By Unsupervised_Machine_Learning
-10 19 Sentimet_Classification Achieved_By Semi_supervised_Machine_Learning
-10 15 Sentimet_Classification Achieved_By Sentiment_Analysis_of_News_Headlines
-14 16 Entity_Level Extended_By Entity_Discovery
+1 10 Sentiment_Analysis Achieved_By Sentiment_Classification
+4 13 Aggregate_Text Consists_Of Analyse_Positive_or_Negative_Text
+10 12 Sentiment_Classification Achieved_By Sentiment_Analysis_of_Political_News
+10 13 Sentiment_Classification Consists_Of Analyse_Positive_or_Negative_Text
+12 17 Sentiment_Analysis_of_Political_News Achieved_By Supervised_Machine_Learning
+12 18 Sentiment_Analysis_of_Political_News Achieved_By Unsupervised_Machine_Learning
+12 19 Sentiment_Analysis_of_Political_News Achieved_By Semi_supervised_Machine_Learning
+12 15 Sentiment_Analysis_of_Political_News Achieved_By Sentiment_Analysis_of_News_Headlines
 17 21 Supervised_Machine_Learning Achieved_By Maximum_Entropy
 17 20 Supervised_Machine_Learning Achieved_By Naive_Bayes
 17 22 Supervised_Machine_Learning Achieved_By SVM 
-21 23 Maximum_Entropy Contributon_Plus_Plus Accuracy       
-
-
- 
-
-
-
-
-
- 
+21 23 Maximum_Entropy Contribution_Plus_Plus Accuracy

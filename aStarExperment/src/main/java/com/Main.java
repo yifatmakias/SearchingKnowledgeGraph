@@ -20,10 +20,11 @@ public class Main {
         final int K = 2;
         HelperFunctionsClass helpClass = new HelperFunctionsClass();
 
-        RDFGraph graph = helpClass.createGraph("result\\RDF\\search_entity.txt",
-                "result\\RDF\\search_edge.txt");
-        GraphQuery queryGraph = new GraphQuery("result\\GraphQueryFiles\\query_entity.txt",
-                "result/GraphQueryFiles/query_edge.txt");
+        RDFGraph graph = helpClass.createGraph("result\\RDF\\Search_entity.txt",
+                "result\\RDF\\Search_edge.txt");
+        GraphQuery queryGraph = new GraphQuery("result\\Queries\\query_entity.txt",
+                "result/Queries/query_edge.txt");
+        String graphDomain = "Search";
 
         queryGraph.getGraphQuery().printPathsForAllLeaves();
         ArrayList<ArrayList<String>> queryPaths = queryGraph.getGraphQuery().getPathsForAllLeaves();
@@ -35,16 +36,24 @@ public class Main {
         ReadSimilarityTxtFile read_first_node_sim_file = new ReadSimilarityTxtFile(simFileNode, firstQueryNode);
         Map<String, Double> map_first_sim_node = read_first_node_sim_file.getMap();
         Map<String, Double> KSimilarGraphNodes = helpClass.getSimilarKGraphNodes(map_first_sim_node, K);
-        Process p = Runtime.getRuntime().exec("C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\venv\\Scripts\\python.exe C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\node_similarity.py result\\RDF\\search_entity.txt result\\SimilarityFiles\\sim_graph_and_query.txt result\\GraphQueryFiles\\query_entity.txt");
+        long startTime = System.currentTimeMillis();
+        Process p = Runtime.getRuntime().exec("C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\venv\\Scripts\\python.exe C:\\Users\\yifat\\PycharmProjects\\SearchingMEMap\\node_similarity.py result\\RDF\\Search_entity.txt result\\SimilarityFiles\\sim_graph_and_query.txt result\\Queries\\query_entity.txt");
         p.waitFor();
+        long endTime   = System.currentTimeMillis();
+        long totalTime = endTime - startTime;
+        System.out.println("Similarity file creation Time: " + totalTime);
 
-        GreedyQuery greedyQuery = new GreedyQuery(graph, queryGraph, simFileEdge, simFileNode);
+        startTime = System.currentTimeMillis();
+        GreedyQuery greedyQuery = new GreedyQuery(graph, queryGraph, simFileEdge, simFileNode, graphDomain);
         for (Map.Entry<String, Double> entry : KSimilarGraphNodes.entrySet()) {
             for (ArrayList<String> queryPath: queryPaths) {
                 greedyQuery.recursiveRun(0, entry.getKey(), K, queryPath);
             }
         }
+        endTime   = System.currentTimeMillis();
+        totalTime = endTime - startTime;
         greedyQuery.printPathResults();
+        System.out.println("Query response Time: " + totalTime);
 
 /*      ReadSimilarityTxtFile read_edge_sim_file = new ReadSimilarityTxtFile(simFileEdge, "Achieved_By");
         Map<String, Double> map_sim_edge = read_edge_sim_file.getMap();

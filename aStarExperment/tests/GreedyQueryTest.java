@@ -33,7 +33,7 @@ public class GreedyQueryTest {
 
         simFileEdge = "tests\\sim_edge.txt";
         simFileNode = "tests\\sim_graph_and_query.txt";
-        greedyQuery = new GreedyQuery(graph, queryGraph, simFileEdge, simFileNode);
+        greedyQuery = new GreedyQuery(graph, queryGraph, simFileEdge, simFileNode, "Search");
         queryPaths = queryGraph.getGraphQuery().getPathsForAllLeaves();
         firstQueryNode = queryGraph.getEntities().get(0).getName();
         read_first_node_sim_file = new ReadSimilarityTxtFile(simFileNode, firstQueryNode);

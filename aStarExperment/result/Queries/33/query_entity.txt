@@ -1,0 +1,2 @@
+1 Design_Pattern_Specification_Language DSPL
+2 DPSL DSPL

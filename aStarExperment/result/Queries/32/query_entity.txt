@@ -1,0 +1,2 @@
+1 Design_Patterns DSPL
+2 Specify_Patterns DSPL
