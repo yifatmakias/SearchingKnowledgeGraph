@@ -1,0 +1,3 @@
+1 2 Design_Pattern_Language Achieved_By Specification_Based_DPSL
+2 3 Specification_Based_DPSL Achieved_By DPSL_with_other_language_foundation
+3 4 DPSL_with_other_language_foundation Achieved_By RSL

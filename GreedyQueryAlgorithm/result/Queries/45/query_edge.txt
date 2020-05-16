@@ -1,0 +1,4 @@
+1 2 Variability_Model Achieved_By Multiple_Model
+2 3 Multiple_Model Achieved_By Restriction
+3 4 Restriction Achieved_By ADOM
+4 5 ADOM Consists_Of Validation_Algorithm

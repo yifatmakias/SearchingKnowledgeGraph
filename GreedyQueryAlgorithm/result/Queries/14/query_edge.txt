@@ -1,0 +1,2 @@
+1 2 Predictive_modeling Achieved_By Classification
+2 3 Classification Achieved_By K-nearest_neighbour

@@ -1,0 +1,5 @@
+1 Discover_knowledge Data_mining
+2 Predictive_modeling Data_mining
+3 Classification Data_mining
+4 K-Nearest_Neighbors Data_mining
+5 Define_feature_space Data_mining

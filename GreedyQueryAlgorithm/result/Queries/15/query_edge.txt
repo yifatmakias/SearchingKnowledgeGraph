@@ -1,0 +1,2 @@
+1 2 Discover_knowledge Achieved_By Clustering
+2 3 Clustering Achieved_By Partition

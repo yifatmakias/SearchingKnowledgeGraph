@@ -1,0 +1,17 @@
+1 2 Sentiment_Analysis Consists_Of Gathering_Text
+1 3 Sentiment_Analysis Consists_Of Analyze Text
+1 4 Sentiment_Analysis Consists_Of Aggregate_Text
+1 5 Sentiment_Analysis Consists_Of Scoring
+1 6 Sentiment_Analysis Consists_Of Evaluation
+1 10 Sentiment_Analysis Achieved_By Sentiment_Classification
+4 13 Aggregate_Text Consists_Of Analyse_Positive_or_Negative_Text
+10 12 Sentiment_Classification Achieved_By Sentiment_Analysis_of_Political_News
+10 13 Sentiment_Classification Consists_Of Analyse_Positive_or_Negative_Text
+12 17 Sentiment_Analysis_of_Political_News Achieved_By Supervised_Machine_Learning
+12 18 Sentiment_Analysis_of_Political_News Achieved_By Unsupervised_Machine_Learning
+12 19 Sentiment_Analysis_of_Political_News Achieved_By Semi_supervised_Machine_Learning
+12 15 Sentiment_Analysis_of_Political_News Achieved_By Sentiment_Analysis_of_News_Headlines
+17 21 Supervised_Machine_Learning Achieved_By Maximum_Entropy
+17 20 Supervised_Machine_Learning Achieved_By Naive_Bayes
+17 22 Supervised_Machine_Learning Achieved_By SVM 
+21 23 Maximum_Entropy Contribution_Plus_Plus Accuracy
