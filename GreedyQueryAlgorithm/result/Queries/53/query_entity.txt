@@ -1,0 +1,5 @@
+1 Political_News Sentiment_Analysis
+2 Supervised_Machine_Learning Sentiment_Analysis
+3 Naive_Bayes Sentiment_Analysis
+4 Entropy Sentiment_Analysis
+5 SVM Sentiment_Analysis

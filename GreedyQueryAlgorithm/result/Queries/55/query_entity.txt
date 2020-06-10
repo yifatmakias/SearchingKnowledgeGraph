@@ -1,0 +1,4 @@
+1 Design_Pattern_Specification_Language DSPL
+2 Intent-Based_DSPL DSPL
+3 Defining_DP DPSL
+4 Detection_DP DSPL

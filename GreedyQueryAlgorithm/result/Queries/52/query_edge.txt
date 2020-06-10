@@ -1,0 +1,3 @@
+1 2 Classification Achieved_By nearest_neighbour
+2 3 nearest_neighbour Consists_Of Declare_feature_space
+2 4 nearest_neighbour Consists_Of Change_feature_space

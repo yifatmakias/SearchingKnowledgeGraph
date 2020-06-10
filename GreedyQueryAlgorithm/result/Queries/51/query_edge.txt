@@ -1,0 +1,3 @@
+1 2 Discover_Knowledge Achieved_By Clustering
+2 3 Clustering Achieved_By Hierarchical_Clustering
+2 4 Clustering Achieved_By Partitional_Clustering

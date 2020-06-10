@@ -1,0 +1,3 @@
+1 2 Design_Pattern_Specification_Language Achieved_By Intent-Based_DSPL
+2 3 Intent-Based_DSPL Consists_Of Defining_DP
+2 4 Intent-based_DSPL Consists_Of Detection_DP

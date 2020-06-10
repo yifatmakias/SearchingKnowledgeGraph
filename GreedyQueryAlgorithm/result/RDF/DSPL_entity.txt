@@ -7,7 +7,7 @@
 7 Use_DPSL_For_Verification_And_Validation_Of_DP DSPL
 8 Use_DPSL_For_Graphical_Modeling_Of_DP DSPL
 9 Use_DPSL_For_Defining_DP DSPL
-10 Use_Specification_Based_DPSL DSPL
+10 Use_Specification-Based_DPSL DSPL
 11 Use_DPSL_With_Mathemtical_Foundation DSPL
 12 Use_DPSL_With_Modeling_Language_Foundation DSPL 
 13 Use_DPSL_With_Other_Language_Foundation DSPL

@@ -1,0 +1,4 @@
+1 2 Specify_BP_Family Achieved_By Model_Variability
+2 3 Model_Variability Achieved_By Multiple_Variants_Jointly
+3 4 Multiple_Variants_Jointly Achieved_By Variability_By_Extension
+3 5 Multiple_Variants_Jointly Achieved_By Variability_By_Restriction

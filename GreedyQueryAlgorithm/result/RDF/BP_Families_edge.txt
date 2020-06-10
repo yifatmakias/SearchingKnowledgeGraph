@@ -19,7 +19,7 @@
 19 16 Support_Decision_Via_Model_Terminology Contribution_Plus_Plus Support_For_Decision_Making
 21 23 Use_ADOM Consists_Of Use_Validation_Algorithm
 21 14 Use_ADOM Contribution_Plus_Plus Provided_Validation
-21 15 Use_ADOM Contribution_Plus_Plus Language_Independency
+21 15 Use_ADOM Contribution_Plus_Plus Language_Independence
 21 19 Use_ADOM Contribution_Plus_Plus Support_Decision_Via_Model_Terminology
 21 22 Use_ADOM Contribution_Plus_Plus Tool_Support
 13 21 Model_Variability_By_Restriction Achieved_By Use_ADOM 

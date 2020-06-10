@@ -1,0 +1,4 @@
+1 2 Political_News Achieved_By Supervised_Machine_Learning
+2 3 Supervised_Machine_Learning Achieved_By Naive_Bayes
+2 4 Supervised_Machine_Learning Achieved_By Entropy
+2 5 Supervised_Machine_Learning Achieved_By SVM

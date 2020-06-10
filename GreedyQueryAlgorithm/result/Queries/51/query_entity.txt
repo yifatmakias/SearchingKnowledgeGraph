@@ -1,0 +1,4 @@
+1 Discover_Knowledge Data_mining
+2 Clustering Data_mining
+3 Hierarchical_Clustering Data_mining
+4 Partitional_Clustering Data_mining

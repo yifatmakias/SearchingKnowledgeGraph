@@ -1,0 +1,4 @@
+1 2 Sentiment_Classification Achieved_By Political_News
+2 3 Political_News Achieved_By Supervised_Machine_Learning
+2 4 Political_News Achieved_By Unsupervised_Machine_Learning
+2 5 Political_News Achieved_By Semi_supervised_Machine_Learning
